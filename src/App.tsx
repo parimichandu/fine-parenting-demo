@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Navbar } from './components/Navbar';
 import { CounsellorHero } from './components/CounsellorHero';
 import { ProfessionalHighlights } from './components/ProfessionalHighlights';
@@ -96,6 +97,9 @@ export function App() {
         isOpen={certificationOpen}
         onClose={() => setCertificationOpen(false)}
       />
+
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
     </div>
   );
 }
